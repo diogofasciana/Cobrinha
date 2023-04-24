@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogo da Cobrinha</title>
+    <style>
+      canvas {/*utilização de canvas para o jogo da cobrinha*/
+        border: 1px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba2637e2ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="rodape.css">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Jogo da cobrinha</h1>
+        <h4>Utilize as teclas WASD para direcionar a cobra e some pontos!</h4>
+        <div id="pontos">0</div>
+        <select class="cor_cobra" id="selecao-cor" onchange="atualizarCor()">
+            <option value="green">Verde</option>
+            <option value="blue">Azul</option>
+            <option value="black">Preto</option>
+            <option value="purple">Roxo</option>
+        </select> 
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <button class="botao" id="reiniciar" onclick="reiniciar()">Reiniciar</button>                
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2022 Direitos reservados por
+                            <a id="copyright__fasciana" href="https://www.linkedin.com/in/diogo-fasciana-49ab5820a">Fasciana</a>.
+                        </p>
+                    </div>
+            
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="github" href="https://github.com/diogofasciana"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a class="twitter" href="https://twitter.com/digoley"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="https://www.instagram.com/diogofasciana/?next=%2F"><i class="fa-brands fa-instagram"></i></a></li>   
+                            <li><a class="linkedin" href="https://www.linkedin.com/in/diogo-fasciana-49ab5820a"><i class="fa-brands fa-linkedin"></i></a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="snake.js"></script>
+  </body>
+</html>

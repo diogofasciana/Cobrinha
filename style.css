@@ -1,0 +1,53 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#canvas {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#reiniciar {
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+font-family: 'Montserrat', sans-serif;
+border: 2px solid #333;
+padding: 10px 20px;
+font-size: 12px;
+font-weight: bold;
+background-color: transparent;
+color: #333;
+transition: all 0.3s ease-in-out;
+width: 200px;
+}
+    
+.botao:hover {
+background-color: #333;
+color: #fff;}
+
+.cor_cobra {
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #333;
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    width: 100px;
+    margin: 10px;
+}
