@@ -127,3 +127,16 @@ intervaloJogo = setInterval(function() { // Inicia novo intervalo de atualizaç�
 }, 100);
 }
 
+// Seleciona o botão de modo escuro, o canvas e o body
+const darkModeButton = document.getElementById("dark-mode-button");
+const myCanvas = document.getElementById("canvas");
+const body = document.querySelector('body');
+var myFooter = document.getElementsByTagName("footer")[0];
+
+// Adiciona um listener para o evento de clique no botão
+darkModeButton.addEventListener("click", function() {
+  // Alterna a classe CSS para o canvas e o body
+  myCanvas.classList.toggle("dark-mode");
+  body.classList.toggle("dark-mode");
+  myFooter.classList.toggle("dark-mode");
+});

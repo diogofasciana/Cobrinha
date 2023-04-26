@@ -20,14 +20,15 @@
         <h1>Jogo da cobrinha</h1>
         <h4>Utilize as teclas WASD para direcionar a cobra e some pontos!</h4>
         <div id="pontos">0</div>
-        <select class="cor_cobra" id="selecao-cor" onchange="atualizarCor()">
+        <select class="cor_cobra botao" id="selecao-cor" onchange="atualizarCor()">
             <option value="green">Verde</option>
             <option value="blue">Azul</option>
             <option value="black">Preto</option>
             <option value="purple">Roxo</option>
         </select> 
         <canvas id="canvas" width="400" height="400"></canvas>
-        <button class="botao" id="reiniciar" onclick="reiniciar()">Reiniciar</button>                
+        <button class="botao" id="reiniciar" onclick="reiniciar()">Reiniciar</button>       
+        <button class="botao botao1" id="dark-mode-button">Modo Escuro</button>         
     </div>
     <footer class="site-footer">
         <div class="container">

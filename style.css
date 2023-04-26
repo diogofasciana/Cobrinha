@@ -25,29 +25,63 @@ h1 {
 
 .botao {
 font-family: 'Montserrat', sans-serif;
-border: 2px solid #333;
+border: 2px solid;
 padding: 10px 20px;
 font-size: 12px;
 font-weight: bold;
-background-color: transparent;
-color: #333;
 transition: all 0.3s ease-in-out;
 width: 200px;
+background-color: black;
+color: white;
 }
-    
-.botao:hover {
-background-color: #333;
-color: #fff;}
+
+.botao1{
+    width: 100px;
+    margin: 10px;
+}
 
 .cor_cobra {
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #333;
+    border: 2px solid;
     padding: 10px 10px;
     font-size: 12px;
     font-weight: bold;
-    background-color: transparent;
-    color: #333;
     transition: all 0.3s ease-in-out;
     width: 100px;
     margin: 10px;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode canvas {
+    border-color: white;
+}  
+
+body {
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+footer {
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+canvas {
+    background-color: #fff;
+    border: 1px solid black;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+canvas.dark-mode {
+    background-color: black;
+    border-color: #fff;
+}
+  
